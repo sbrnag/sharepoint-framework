@@ -1,26 +1,16 @@
 ## sharepoint-react
 
-This is where you include your WebPart documentation.
+Example project to add new row in a table on button click
 
-### Building the code
+1. clone or download teh project to your local
+2. do 'npm install'
+3. gulp serve 
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
+screen shots
 
-This package produces the following:
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+initally teh table will be wiht three rows. then we can add more rows by cliking addnew button
 
-### Build options
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+
+

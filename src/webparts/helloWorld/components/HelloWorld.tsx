@@ -1,8 +1,10 @@
 import * as React from 'react';
 import styles from './HelloWorld.module.scss';
 import { IHelloWorldProps } from './IHelloWorldProps';
+import { WebPartContext } from '@microsoft/sp-webpart-base';
+import BusinessFormProvider from '../context/BusinessFormProvider';
 
-import TableExample from './TableExample';
+import BusinessFormFg from './BusinessFormFg';
 
 export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
   public render(): React.ReactElement<IHelloWorldProps> {
@@ -11,8 +13,9 @@ export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
-              <span className={ styles.title }>Adding new row on button click example</span>
-              <TableExample />
+              <BusinessFormProvider>
+                <BusinessFormFg contextProp={this.props.context as WebPartContext}/>
+              </BusinessFormProvider>
             </div>
           </div>
         </div>

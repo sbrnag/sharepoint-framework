@@ -11,7 +11,8 @@
     @include ms-Grid-row;
     @include ms-fontColor-white;
     background-color: $ms-color-themeDark;
-    padding: 20px;
+    padding: 0px;
+    margin: 0px;
   }
 
   .column {
@@ -20,6 +21,8 @@
     @include ms-xl8;
     @include ms-xlPush2;
     @include ms-lgPush1;
+    padding: 0px;
+    margin: 0px;
   }
 
   .title {
